@@ -78,9 +78,9 @@ const images = [
         return (
             <>
                 <h2>Gallery</h2>
-                <article class="gallery">
+                <article>
 
-                <ImageGallery items={images} />
+                    <ImageGallery items={images} />
 
                 </article>
             </>

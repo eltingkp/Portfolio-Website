@@ -12,6 +12,7 @@ function Navigation() {
         <Link to="../TopicsPage">TOPICS</Link>
         <Link to="../ActivitiesPage">ACTIVITIES</Link>
         <Link to="../GalleryPage">GALLERY</Link>
+        <Link to="../OrderPage">ORDER</Link>
         {/* <Link to="../">CONTACTS</Link>
         <Link to="../">STAFF</Link> */}
     </nav>

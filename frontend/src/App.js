@@ -15,6 +15,7 @@ import ActivitiesPage from './pages/ActivitiesPage';
 import AddActivityPageForm from './pages/AddActivityPageForm';
 import EditActivityPageForm from './pages/EditActivityPageForm';
 import GalleryPage from './pages/GalleryPage';
+import OrderPage from './pages/OrderPage';
 
 
 // import MoviesPage from './pages/MoviesPage';
@@ -57,6 +58,7 @@ function App() {
                     <Route path="/TopicsPage" element={<TopicsPage/>} />
                     <Route path="/ActivitiesPage" element={<ActivitiesPage setActivity={setActivityToEdit}/>} />
                     <Route path="/GalleryPage" element={<GalleryPage/>} />
+                    <Route path="/OrderPage" element={<OrderPage/>} />
                  
                     Use these if your schema requires LONG data input:
                     {/* <Route path="/create" element={<AddMoviePageTable />} /> 

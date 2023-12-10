@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 // Change the icons, function names, and parameters 
 // to fit your portfolio topic and schema.
@@ -8,10 +8,11 @@ import { GrEdit } from "react-icons/gr";
 
 
 function Activity({ activity, onEdit, onDelete }) {
+    const [date] = useState(activity.date.slice(0,10));
     return (
         <tr>
             <td>{activity.activityName}</td>
-            <td>{activity.date}</td>
+            <td>{date}</td>
             <td>{activity.participants}</td>
 
             {/* Update these icons to something that matches your style. */}
