@@ -1,0 +1,470 @@
+/*  ===== MOBILE styles (reside at the top and are inherited by all devices) ===== */
+/*  ===== See tablet, desktop, and print @media queries at the bottom. */
+
+
+/*   ----- Imports  -----  */
+/* @import 'node_modules/modern-normalize/modern-normalize.css'; /* npm install modern-normalize  Resets elements for browser consistency.  https://www.npmjs.com/package/modern-normalize          */
+/* @import "component1.css";   Component-specific stylesheets, if any.   */
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Montserrat:wght@300;900&display=swap');
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+
+/*   ----- Variables  -----  */
+:root {
+  --mauve: #8C797C;
+  --darkMauve: #574B4D;
+  --lightMauve: #FAD7DD;
+  --mutedBlush: #BFAAAE;
+  --darkForestGreen: #3B403A;
+  --mediumForestGreen: #7E877B;
+  --lightForestGreen: #E1F2DC;
+  --mutedSage: #B8BFA8;
+  --mutedOlive: #D7D99A;
+  --transparentMauve: rgba(140, 121, 124, .9);
+  --transparentMediumForestGreen: rgba(126,135,123,0.4);
+  /* --custom-embellishment-name:; */
+}
+
+/*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+body {       /* Can alternatively define in html {}. */
+  background-image:url(./images/background3-hidden-lake-glacier-national-park.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color:var(--lightForestGreen);
+  font-family: 'Montserrat', sans-serif; /* Define with at least one font name and its related generic family name.*/
+  margin: 0 auto; 
+  padding: 2%;
+  max-width: 1920px;
+
+}
+
+/*  ----- Page layout blocks -----  */
+header {
+  background-color: var(--transparentMauve);
+  color: var(--lightForestGreen);
+  border-bottom: thick solid var(--darkMauve);
+  margin: 1% 1% 0 1%;
+  padding: 1%;
+  text-align: center;
+  font-size: 30px;
+}
+
+header img{
+  width: 45px;
+  height: 45px;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-color: var(--transparentMauve);
+  color: var(--lightForestGreen);
+  margin: 0 1% 0 1%;
+  padding: 1%;
+  border-top: thick solid var(--darkMauve);
+}
+section {
+  /* background-color: rgba(140, 121, 124, 0.8); */
+  color: var(--lightForestGreen);
+  padding: 1%;
+}
+article {
+  color: var(--lightForestGreen);
+  margin: 0 1%;
+  padding: 1%;
+}
+
+article.aside {
+  border: var(--mutedOlive), solid, 3px;
+}
+
+article.data {
+  border-top: var(--darkMauve) solid 3px;
+}
+
+article.staffintro {
+  margin: 0 0 4% 0;
+}
+
+
+  #topic1 {}
+  #topic2 {}
+div {}
+aside {}
+
+aside.status {
+  border: var(--mutedOlive) dashed 5px;
+  padding: 1%;
+  width: 250px;
+  height: 150px;  
+  float: right;
+  margin: 1%; 
+  text-align: center;
+  font-size: larger;
+}
+
+.gallery figure{
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row;
+  align-content: normal;
+  justify-content: normal;
+  align-items: normal;
+  /* width: 50px; */
+  margin: 25%;
+  padding: 25%;
+}
+
+footer {
+  background-color: var(--transparentMauve);
+  color: var(--lightForestGreen);
+  border-top: thick solid var(--darkMauve);
+  margin: 0 1% 1% 1%;
+  padding: 1%;
+  text-align: center;
+}
+
+/* ----- Anchors ----- Text links */
+a {}
+a:link {
+  color: var(--lightForestGreen);
+}
+a:hover {
+  color: var(--darkForestGreen);
+}
+a:active {}
+a:visited {
+  color: var(--lightForestGreen);
+
+}
+
+/*  ----- Navigation ----- Override text links for navigation only.  */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color:var(--mutedBlush);
+  margin: 0 1% 0 1%;
+  text-align: center;
+  padding: .5%;
+}
+
+nav a {
+  background-color: var(--transparentMediumForestGreen);
+  color: var(--lightForestGreen);
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 1% 0 1%;
+  padding: 1%;
+  text-align: center;
+
+}
+
+nav a:hover {
+  background-color: var(--mutedSage);
+  color: var(--darkForestGreen);
+}
+
+nav.local {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  flex-direction: row;
+  background-color: var(--transparentMediumForestGreen);
+  border-bottom: solid var(--lightForestGreen);
+  border-top: solid var(--lightForestGreen);
+  border-width: 3px;
+  margin: .5%;
+  padding: .75% 1.5%;
+}
+
+nav.local a {
+  background-color: var(--mutedBlush);
+  color: var(--darkMauve);
+  font-weight: bold;
+  text-decoration: none;
+  margin: .75%;
+  padding: 1% 1.5%;
+  text-align: center;
+  border-radius: 20px;
+
+}
+
+nav.local a:hover {
+  background-color: var(--darkMauve);
+  color: var(--lightForestGreen);
+}
+
+/*  -----  Typography  ----- */
+p {}
+p.order {
+  text-align: center;
+  font-size: larger;
+}
+br {}
+ol, ul, dl {}
+li {}
+dt {}
+dd {}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Kalam', cursive;
+
+} 
+
+h1 {}
+
+h2 {
+  margin: 0 1%;
+  padding: 1%;
+  font-size: 32px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 28px;
+  margin: 24px auto;
+}
+
+h4 {}
+h5 {}
+h6 {}
+
+abbr {}
+acronym {}
+address {}
+blockquote {}
+  q {}
+  cite {}
+em {}
+hr {}
+mark {}
+s {}
+span {}
+strong {}
+sub {}
+sup {}
+time {}
+
+/*  ----- Coding or instructional typography ----- */
+pre {}
+code {}
+kbd {}
+samp {}
+var {}
+del {} 
+ins {}
+
+/*  ----- Table ----- */
+table {
+  margin: 1%;
+  padding: 2%;
+  background-color: var(--mediumForestGreen);
+  width: 98%;
+  table-layout: fixed;
+}
+
+table img {
+  height: 48px;
+  border: var(--mutedOlive) solid 3px;
+}
+caption {
+  margin: 3% 0;
+  color: var(--lightMauve);
+  font-weight: bold;
+}
+thead {
+  color: var(--darkForestGreen);
+}
+tbody {}
+tfoot {}
+tr {}
+  tr:nth-child(even) {
+  }
+th {
+  padding: 15px;
+  border-bottom: var(--darkMauve) dotted 3px;
+}
+td {
+  padding: 2px;
+  border-bottom: var(--darkMauve) dotted 3px;
+  text-align: center;
+}
+
+  td:nth-child(1) {}
+colgroup {}
+data {}
+datalist {}
+
+
+/*  ----- Form ----- */
+form {
+  display: flex;
+  margin: 0 15%;
+  padding: 1.5%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+fieldset {
+  padding: 1%;
+  margin: 1%;
+  border: var(--mutedOlive) dotted;
+}
+  legend {
+    color:var(--darkForestGreen);
+    font-weight: bold;
+  }
+label {
+  padding: 1%;
+  display: block;
+}
+
+button {
+  width: 50%;
+  padding: .25%;
+  background-color: var(--transparentMediumForestGreen);
+  border-radius: 10%;
+  font-weight: bold;
+  border: var(--darkForestGreen) solid;
+  color: var(--darkForestGreen);
+}
+
+button.staffbtn {
+  background-color: var(--mutedBlush);
+  border-radius: 1%;
+  padding: 1%;
+  width: 100px;
+  height: 50px;
+
+}
+
+input {
+  background-color: var(--mutedSage);
+  border: var(--darkMauve) solid;
+  margin: 1%;
+  font-size: medium;
+  padding: 2%;
+}
+
+fieldset.basics input {
+  width: 90%;
+}
+
+select {
+  background-color: var(--mediumForestGreen);
+  color: var(--darkForestGreen);
+}
+  optgroup {}
+  option {
+
+  }
+textarea {
+  background-color: var(--mutedBlush);
+  border: var(--mutedOlive) solid;
+  font-size: larger;
+  color: var(--darkMauve);
+  padding: 2%;
+  height: 120px;
+  width: 90%;
+  margin: 1%;
+}
+output {}
+meter {}
+progress {}
+
+fieldset.order {
+  min-width: 350px;
+  width: 50%;
+  border: var(--darkMauve) solid 3px;
+}
+
+fieldset.info {
+  border: var(--darkMauve) solid 3px;
+}
+
+fieldset.info input {
+  width: 90%;
+  background-color: var(--lightForestGreen);
+}
+
+fieldset.info textarea{
+  background-color: var(--lightForestGreen);
+  border: var(--darkMauve) solid 3px;
+}
+
+fieldset.order button {
+  background-color: var(--mutedBlush);
+  margin: 2% 0 2% 70%;
+  height: 50px;
+  width: 100px;
+}
+
+
+
+/* ----- Media ----- */
+figure {}
+  figcaption {}
+  figure img {}
+svg {}
+picture {}
+  source {}
+iframe {}
+video {}
+audio {}
+embed {}
+object {}
+
+/*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+/* .gallery {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.gallery figure {
+  width: 400px;
+  border: thick var(--lightForestGreen) solid;
+  margin: .5em auto;
+  padding: .5em;
+}
+
+.gallery img{
+  width: 100%;
+}
+
+.gallery figcaption{
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+} */
+
+.floatright {}
+.floatleft {}
+.center-middle {}
+
+.ten {}
+.twenty {}
+.thirty {}
+.forty {}
+.fifty {}
+.sixty {}
+.seventy {}
+.eighty {}
+
+.radius {}
+.circle {}
+.boxshadow {}
+.tshadow {} 
+.gradient {}
+.shape {}
+
+@keyframes App-logo {}
+
+/*   ===== TABLET  media query overrides mobile styles ===== */
+@media all and (min-width: 600px) {}
+
+/*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+@media all and (min-width: 1080px) {}
+
+/*   ===== PRINT  media query overrides previous styles =====  */
+@media print {}

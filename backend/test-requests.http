@@ -1,0 +1,82 @@
+### CREATE five documents.
+POST http://localhost:3000/activities HTTP/1.1
+content-type: application/json
+
+{
+    "activityName": "Bingo",
+    "participants": 25,
+    "date": "11-28-23"
+}
+
+
+### CREATE 2
+POST http://localhost:3000/activities HTTP/1.1
+content-type: application/json
+
+{
+    "activityName": "Chair Yoga",
+    "participants": 20,
+    "date": "11-28-23"
+}
+
+### CREATE 3
+POST http://localhost:3000/activities HTTP/1.1
+content-type: application/json
+
+{
+    "activityName": "Trivia",
+    "participants": 30,
+    "date": "11-28-23"
+}
+
+### CREATE 4
+POST http://localhost:3000/activities HTTP/1.1
+content-type: application/json
+
+{
+    "activityName": "Happy Hour",
+    "participants": 100,
+    "date": "11-28-23"
+}
+
+### CREATE 5
+POST http://localhost:3000/activities HTTP/1.1
+content-type: application/json
+
+{
+    "activityName": "Meditation",
+    "participants": 10,
+    "date": "11-28-23"
+}
+
+
+### RETRIEVE all documents.
+GET http://localhost:3000/activities HTTP/1.1
+
+
+
+### RETRIEVE a document by its ID.
+### Replace the following ID with one that exists in the collection.
+GET http://localhost:3000/activities/656be78696a39fc979c9402d HTTP/1.1
+
+
+### UPDATE one document's year, by ID.
+### Replace the ID in the following request with one that exists
+### and update the year:
+PUT http://localhost:3000/activities/656be78a96a39fc979c9402f HTTP/1.1
+content-type: application/json
+
+{
+    "activityName": "Meditation",
+    "participants": 15,
+    "date": "11-28-23"
+}
+
+### DELETE by ID (responds with nothing if successful):
+DELETE http://localhost:3000/activities/656c076a4cf45ece8f65a25a HTTP/1.1
+
+
+
+### RETRIEVE all documents (responds with 4 or the original 5):
+GET http://localhost:3000/activities HTTP/1.1
+

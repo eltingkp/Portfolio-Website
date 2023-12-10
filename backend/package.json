@@ -1,0 +1,19 @@
+{
+  "name": "activity-log-backend",
+  "version": "2023",
+  "description": "This is an API for a daily activity log.",
+  "main": "activities-controller.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon activities-controller.mjs"
+  },
+  "author": "Kathrina Elting",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.9.1",
+    "nodemon": "^3.0.1",
+    "rest": "^2.0.0"
+  }
+}
