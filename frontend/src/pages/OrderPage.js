@@ -10,10 +10,6 @@ function OrderPage() {
             <article>
                 <p class="order">Let's order you some pet products!</p>
 
-                <form action="/review-order" method="POST">
-                    <fieldset class="order">
-                        <legend>Your Pet Product Order</legend>
-
                         <table class="order">
 
                             <caption>Please select ONE product</caption>
@@ -32,11 +28,6 @@ function OrderPage() {
                             </tbody>
 
                         </table>
-
-                        <button type="submit">Submit</button>
-                        
-                    </fieldset>
-                </form>
 
             </article>
 
