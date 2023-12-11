@@ -13,6 +13,10 @@ import React from "react";
                     </p>
 
                     <p>
+                        <p>
+                            The following concepts are used in my portfolio project:
+                        </p>
+
                         <dl>
                             <dt>HTML</dt>
                                 <dd>
