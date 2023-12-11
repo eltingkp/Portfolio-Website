@@ -33,7 +33,7 @@ import HomePage from './pages/HomePage';
 // Define the function that renders the content in Routes, using State.
 function App() {
 
-  const [activity, setActivityToEdit] = useState([])
+  const [activity, setActivityToEdit] = useState([]);
 
   return (
     <>
