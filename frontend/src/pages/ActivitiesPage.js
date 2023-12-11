@@ -35,7 +35,7 @@ function ActivitiesPage({ setActivity }) {
             const activities = await getResponse.json();
             setActivities(activities);
         } else {
-            console.error(`helpful deletion message = ${_id}, status code = ${response.status}`)
+            console.error(`Unable to delete = ${_id}, status code = ${response.status}`)
         }
     }
 

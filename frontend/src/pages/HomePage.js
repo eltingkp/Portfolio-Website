@@ -20,12 +20,12 @@ import React from "react";
                         <dl>
                             <dt>HTML</dt>
                                 <dd>
-                                    HTML stands for Hypertext Markup Language. It is a markup language for describing documents that can be retrieved over the web.
+                                    HTML stands for HyperText Markup Language. It is a markup language for describing documents that can be retrieved over the web.
                                     A client interprets the HTML in a document it receives in the HTTP response from the server and displays the document.
                                 </dd>
                             <dt>CSS</dt>
                                 <dd>
-                                    CSS is a language used for describing the presentation of documents on the web while HTML continues to be used for describing the structure 
+                                    CSS is a language used for describing the presentation of documents on the web, while HTML continues to be used for describing the structure 
                                     of the documents.
                                 </dd>
                             <dt>JavaScript</dt>
@@ -52,14 +52,14 @@ import React from "react";
                                 </dd>
                             <dt>REST</dt>
                                 <dd>
-                                    REST means Representational State Transfer. It is an architectual style of implementing web services that follow certain guidelines. A RESTful service is a 
-                                    webservice that follows REST guidelines. REST APIs are defined by certain constraints. Guidelines for REST include: a server manages collections of resources,
+                                    REST means Representational State Transfer. It is an architectural style of implementing web services that follow certain guidelines. A RESTful service is a 
+                                    web service that follows REST guidelines. REST APIs are defined by certain constraints. Guidelines for REST include: a server manages collections of resources,
                                     a server should expose collections and resource to the clients using unique URLs, a server should support CRUD operations by providing a set of HTTP methods
                                     (POST, GET, PUT, DELETE), and keeping the server stateless.
                                 </dd>
                             <dt>React</dt>
-                                <dd>React is a framework for writing frontend applications. Applications in React are based around the concept of components which are reusable units of UI. React 
-                                    applications are written in JavaScript with additional syntax added by React.</dd>
+                                <dd>React is a framework for writing frontend applications. Applications in React are based around the concept of components, which are reusable units of UI. React 
+                                    applications are written in JavaScript, with additional syntax added by React.</dd>
                         </dl>
                     </p>
 
